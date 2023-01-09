@@ -1,0 +1,246 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Raleway", Arial, sans-serif;
+  padding: 0 4rem;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+h1 {
+  font-size: 22px;
+}
+h2 {
+  font-size: 18px;
+}
+ul {
+  list-style: none;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header img {
+  margin-top: 39px;
+  height: 19px;
+}
+.header-list {
+  display: flex;
+}
+.header-link:hover {
+  color: #0065fc;
+  border-top: 3px solid #0065fc;
+}
+.header-link {
+  padding: 39px 28px 33px 37px;
+}
+
+/* MAIN */
+form {
+  max-width: 420px;
+  padding-top: 20px;
+}
+.container-main h1 + p {
+  margin-top: 8px;
+}
+.container-main p {
+  font-weight: 400;
+}
+.container-form {
+  margin-top: 20px;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  padding-right: 30px;
+}
+.container-form .input-field.first-wrap {
+  flex-grow: 1;
+  display: flex;
+  background: #ffffff;
+  border: 1px solid #f2f2f2;
+  height: 49px;
+}
+
+.container-form label {
+  min-width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+.container-form .input-field input {
+  border: 0;
+  font-size: 16px;
+}
+.container-form .input-field.second-wrap .btn-search {
+  height: 100%;
+  width: 130%;
+  color: #ffff;
+  border: 0;
+  cursor: pointer;
+  background: #0065fc;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+}
+.container-form ::placeholder {
+  color: #000000;
+  opacity: 1;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+.container-form #search {
+  padding-left: 17px;
+  width: 100%;
+}
+.container-form .input-field.second-wrap.mobile {
+  display: none;
+}
+.container-filter {
+  display: flex;
+  align-items: center;
+}
+.container-filter .filter-item {
+  display: flex;
+  margin-left: 20px;
+}
+.container-filter button {
+  padding: 14px 14px 14px 0;
+  /* font-size: 17px; */
+  height: 50px;
+  font-size: clamp(0.875rem, 0.4191rem + 0.7353vw, 1.0625rem);
+  background: none;
+  border: 2px solid #d9d9d9;
+  border-radius: 25px;
+  margin: 0 20px 0 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+.container-filter button:hover {
+  background: #deebff;
+}
+.container-filter .filter-icon {
+  color: #0065fc;
+  padding: 0 10px 0 20px;
+}
+.container-info {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 54px;
+}
+.container-info p {
+  padding-left: 11px;
+  align-self: center;
+}
+@media screen and (max-width: 992px) {
+  .body {
+    padding: 0 6rem;
+  }
+  .container-filter .filter-item {
+    gap: 1rem;
+  }
+  .container-filter button {
+    margin: 0;
+    text-align: center;
+    font-size: clamp(0.6875rem, -0.5982rem + 2.6786vw, 1.0625rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* HEADER */
+  body {
+    padding: 0;
+  }
+  .container {
+    padding: 0 1rem;
+  }
+  header {
+    align-items: center;
+    flex-direction: column;
+  }
+  header img {
+    margin-top: 21px;
+    height: 19px;
+  }
+  .header-logo {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .header-nav {
+    width: 100%;
+  }
+  .header-link {
+    padding-top: 0;
+    border-bottom: 3px solid #f2f2f2;
+  }
+  .header-link:hover {
+    border-bottom: 3px solid #0065fc;
+    border-top: none;
+  }
+  .header-item {
+    width: 50%;
+    text-align: center;
+  }
+  /* MAIN */
+  form {
+    max-width: 332px;
+  }
+  .container-main {
+    margin-top: 31px;
+  }
+  .container-form {
+    padding-right: 0;
+  }
+  .container-form .input-field.second-wrap.desktop {
+    display: none;
+  }
+  .container-form .input-field.second-wrap.mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+  }
+  .container-filter {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .container-filter .title {
+    margin-bottom: 15px;
+  }
+
+  .container-filter .filter-item {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 0;
+    gap: 17px 10px;
+  }
+  .container-filter button {
+    font-size: 11px;
+    width: 160px;
+    margin: 0;
+    text-align: left;
+  }
+  .container-filter .filter-icon {
+    font-size: 17px;
+    padding: 0 10px 0 5px;
+  }
+  .container-info {
+    margin-top: 43px;
+    align-items: flex-start;
+  }
+}

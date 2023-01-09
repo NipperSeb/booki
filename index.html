@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>coucou</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta name="viewport" content="width=1440, initial-scale=1" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/3f00c5a4fa.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header-logo">
+        <img src="./assets/logo/Booki.png" alt="logo" />
+      </div>
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li class="header-item">
+            <a class="header-link" href="#">Hébergements</a>
+          </li>
+          <li class="header-item">
+            <a class="header-link" href="#">Activités</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- MAIN -->
+    <div class="container">
+      <main class="container-main">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p>En plein centre ville ou en pleine nature</p>
+        <form action="">
+          <div class="container-form">
+            <div class="input-field first-wrap">
+              <label for="search"
+                ><i class="fa-solid fa-location-dot"></i
+              ></label>
+              <input
+                type="search"
+                id="search"
+                name="search"
+                placeholder="Marseille, France"
+                required
+              />
+            </div>
+            <div class="input-field second-wrap desktop">
+              <button class="btn-search" type="button">Rechercher</button>
+            </div>
+            <div class="input-field second-wrap mobile">
+              <button class="btn-search" type="button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="container-filter">
+          <div class="title"><h2>Filtres</h2></div>
+          <div class="filter-item">
+            <button>
+              <i class="filter-icon fa-solid fa-money-bill-wave"></i>économique
+            </button>
+            <button>
+              <i class="filter-icon fa-solid fa-child-reaching"></i>familiale
+            </button>
+            <button>
+              <i class="filter-icon fa-solid fa-heart"></i>romantique
+            </button>
+            <button>
+              <i class="filter-icon fa-solid fa-dog"></i>animaux autorisés
+            </button>
+          </div>
+        </div>
+        <div class="container-info">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="24"
+            height="24"
+            viewBox="0,0,256,256"
+            style="fill: #000000"
+          >
+            <g
+              fill="#0065fc"
+              fill-rule="nonzero"
+              stroke="none"
+              stroke-width="1"
+              stroke-linecap="butt"
+              stroke-linejoin="miter"
+              stroke-miterlimit="10"
+              stroke-dasharray=""
+              stroke-dashoffset="0"
+              font-family="none"
+              font-weight="none"
+              font-size="none"
+              text-anchor="none"
+              style="mix-blend-mode: normal"
+            >
+              <g transform="scale(5.12,5.12)">
+                <path
+                  d="M25,2c-12.73552,0 -23,10.26448 -23,23c0,12.73552 10.26448,23 23,23c12.73552,0 23,-10.26448 23,-23c0,-12.73552 -10.26448,-23 -23,-23zM25,4c11.66448,0 21,9.33552 21,21c0,11.66448 -9.33552,21 -21,21c-11.66448,0 -21,-9.33552 -21,-21c0,-11.66448 9.33552,-21 21,-21zM25,11c-1.65685,0 -3,1.34315 -3,3c0,1.65685 1.34315,3 3,3c1.65685,0 3,-1.34315 3,-3c0,-1.65685 -1.34315,-3 -3,-3zM21,21v2h2v13h-2v2h8v-2h-2v-15z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <p>Plus de 500 logements sont disponible dans cette ville</p>
+        </div>
+      </main>
+    </div>
+  </body>
 </html>
