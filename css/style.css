@@ -17,12 +17,15 @@ a {
 }
 h1 {
   font-size: 22px;
+  font-weight: 700;
 }
 h2 {
   font-size: 18px;
+  font-weight: 700;
 }
 h3 {
   font-size: 16px;
+  font-weight: 700;
 }
 ul {
   list-style: none;
@@ -262,6 +265,46 @@ form {
 .container-cards .popular-cards p {
   padding-top: 7px;
 }
+/* ACTIVITY */
+.container-activity {
+  margin-top: 60px;
+}
+.container-activity .activity-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.container-activity .card-activity {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 20px;
+  width: min(25%, 302px);
+  margin-top: 19px;
+  position: relative;
+}
+.container-activity .card-activity:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8);
+}
+.container-activity .contain-activity {
+  height: 444px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.container-activity .place {
+  display: flex;
+  height: 56px;
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+}
+.container-activity h3 {
+  padding-left: 19px;
+  margin: auto 0;
+}
 
 @media screen and (max-width: 992px) {
   .body {
@@ -293,6 +336,14 @@ form {
   }
   .container-cards .card-popular {
     width: min(33%, 252px);
+  }
+  /* ACTIVITY */
+  .container-activity .card-activity {
+    width: min(25%, 182px);
+    margin-top: 34px;
+  }
+  .container-activity .contain-activity {
+    height: 267px;
   }
 }
 
@@ -405,12 +456,27 @@ form {
   }
   .container-cards .card-popular,
   .container-cards .card {
-    width: min(100%, 334px);
+    width: min(100%, 335px);
   }
   .container-cards .accommodation {
     background: none;
   }
   .container-cards h2 {
     display: none;
+  }
+  /* ACTIVITY */
+  .container-activity {
+    margin-top: 105px;
+  }
+  .container-activity .activity-card {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .container-activity .card-activity {
+    width: min(100%, 334px);
+    margin-top: 0;
+  }
+  .container-activity .contain-activity {
+    height: 190px;
   }
 }
