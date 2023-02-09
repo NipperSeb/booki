@@ -138,7 +138,7 @@ form {
   display: flex;
   align-items: center;
 }
-.container-filter .title p {
+.container-filter .title {
   font-size: 18px;
   font-weight: 700;
 }
@@ -312,6 +312,7 @@ form {
 }
 .container-activity .place {
   display: flex;
+  align-items: center;
   height: 56px;
   position: absolute;
   background-color: white;
